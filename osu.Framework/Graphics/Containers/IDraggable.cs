@@ -6,12 +6,10 @@ using osu.Framework.Input;
 
 namespace osu.Framework.Graphics.Containers
 {
-    public interface IDraggable : IDrawable
+    public interface IDraggable
     {
         Action<Drawable, InputState> DragStart { set; }
-
         Action<Drawable, InputState> Drag { set; }
-
         Action<Drawable, InputState> DragEnd { set; }
     }
 }
